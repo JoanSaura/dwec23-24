@@ -1,0 +1,50 @@
+.h {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: darkkhaki;
+    font-size: 45px;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px; /* Añadido espacio entre el texto y el borde */
+}
+
+.cabeza {
+    background-color: darkkhaki;
+}
+
+body {
+    background-color: black;
+}
+
+.cont {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 5%;
+    border-radius: 15px;
+    border: solid 5px darkkhaki;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background-color: darkkhaki;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    text-align: center;
+}
+
+.menu li {
+    margin-right: 20px;
+    color: aliceblue;
+    font-size: 20px; 
+    margin-bottom: 5px;
+}
+
+.pre-inp {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inp {
+    width: 250px;
+}
