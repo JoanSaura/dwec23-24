@@ -70,3 +70,22 @@ for (let i = 0; i < 5; i++) {
         break ; 
     }
 }
+
+// Date &  Time
+let parrafo = document.getElementById("fecha");
+//new  Date();
+//new Date(milisegundos);
+//new Date(fechaString);
+//new Date(año,mes,dia,horas,minutso,segundos,milisegundos);
+let fehca = new Date("2023-9-10"); // Formato corto año/mes/dia
+let fehca2 = new Date("Jan 16 2000"); // Formato largo
+let fecha3 =  new Date(71,12,29,15,15,0,0); //año,mes,dia,horas,minutos,segundos
+parrafo.innerHTML = fehca.getDate();
+//Metodos tipo fecha
+//getDate() 
+//getDay() dia de la semana en formato numerico
+//getFullYear() obtiene todo el año
+//getHours() las horas
+//getMinutes() minutos
+//getSeconds() segundos
+//getMiliseconds() milisegundos
