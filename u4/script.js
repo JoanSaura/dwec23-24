@@ -23,3 +23,6 @@ let digitos = ["...0123456789ABCDEF"];
 let a = new Array(1,2,3,4, 54, -1, "prueba", true);
 let b = Array.of(10); 
 a[119] = 10;
+
+//PUSH  
+a.push(5);
