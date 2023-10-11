@@ -13,13 +13,13 @@ for (let fila = 0; fila < tablas.length; fila++) {
     }
 }
 
-// Imprimimos las tablas línea por línea
+// Imprimimos las tablas línea por línea (solo los números impares)
 for (let fila = 0; fila < tablas.length; fila++) {
     let linea = "";
-    let impares ;
     for (let col = 0; col < tablas[fila].length; col++) {
-        if(tablas[fila][col] %2 ===)
-        linea += tablas[fila][col] + "\t"; // Usamos "\t" para separar los números con tabulaciones
+        if (tablas[fila][col] % 2 !== 0) {
+            linea += tablas[fila][col] + "\t"; // Usamos "\t" para separar los números con tabulaciones
+        }
     }
     console.log(linea);
 }
