@@ -99,3 +99,59 @@ for (let i = 0; i < letras.length; i++) {
   }
 }
 console.log(vocales);
+
+//METODOS DE ARRAYS
+//pop() elimina el ultimo elemento del array y lo devuelve
+let paco = ["Rubiales","Tijuana","Mamerto"];
+/*console.log(paco);
+
+let pacoEliminado = paco.pop();
+console.log(pacoEliminado);*/
+
+//shift() elimina el primer elemento y lo devuelve
+//let elementoEliminado  = paco.shift()
+//unshift() agerega uno o mas elementos al principio
+//paco.unshift("Valentin");
+
+//concat() combina dos o mas arrays y devuelve un nuevo array
+let otros = ["Valentin","teto"];
+let combo = paco.concat(otros);
+console.log(combo);
+
+//slice() devuelve una copia "Superficial" de una porcion del array
+let copiapaco = paco.slice(0,1) //Desde donde hasta cuando
+
+//splice() Cambia el contenido de un array eliminando, remplazarlo o agregando
+
+paco.splice(1,0,"Valentin","Tijuana")
+
+//indexOf() devuelve el primer indice en el que se ecuentra un elemento dado, devuelve -1 si no lo encuentra
+let indice = paco.indexOf('amparo')
+let cadena = "Hola cara de bola"
+indice = cadena.indexOf("a");
+
+//lastIndexOf() devuekve ek yktuni ubduce
+//join() devuelve todos los elementos de un array en una cadena utilizando un separador especifico
+let joIn = cadena.join()
+
+//sort() ordena los elementos de un array alfabeticamente si son cadenas y numericamente si son numeros
+//Se trata de una funcion :
+//debe recibir dos valores a comprara
+//como resultado debe : devolver un valor positivo(1) si el primer valor es superior al segundo
+//devolver un valor negativo(-1) si el primer valor es inferior al segundo
+//devolver un valor de cero(0) si los dos valores son iguales o equivalentes para la ordenacion
+
+//sort en numeros
+/*let numeros = [10, 5, 8, 3,1];
+console.log(numeros.sort(function(a,b)) {
+return a - b;
+});*/
+
+//sort en cadenas
+console.log(paco.sort((a,b)=>{
+  return (a.toLowerCase() > b.toLowerCase() ? 1 : (a.toLowerCase() < b.toLowerCase()))
+}
+
+));
+
+// FUNCIONES
