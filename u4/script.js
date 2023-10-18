@@ -155,3 +155,73 @@ console.log(paco.sort((a,b)=>{
 ));
 
 // FUNCIONES
+
+function diHola() {
+  console.log("Hola");
+}
+
+diHola();
+
+function multiplica() {
+  let a = 10;
+  let b = 10;
+return (a*b)
+}
+
+console.log(multiplica(3,1));
+
+// OBJETOS
+/**
+  Para la clave podemos omitir las comillas
+ */
+let unCliente = {
+  nombre : "Peter",
+  apellido:"Jackson",
+  'direccion fiscal': "c/ Desconocida",
+ "+-+-+-"  : "boquesa",
+ pago: {
+  tipo : "Visa",
+  tarjeta : "JIJIJIJA",
+  "fecha de caducidad" : "nunca"
+ },
+ vencimiento : 30 
+}
+unCliente["vencimiento"] = 60;
+
+console.log(unCliente["+-+-+-"]);
+
+let estudiante = {
+  id:2,
+  nombre:"Joan",
+  diHola: function() {
+    return "Hola";
+  },
+  notas : [10,2,3],
+  media:function devolverMedia() {
+   let media = (this.notas[0]+this.notas[1]+this.notas[2]) / 3
+  return "La media es de " +media
+  }
+  
+}
+
+//This
+let factura = {
+  descripcion: "Factura de prueba",
+  precio: 100.0,
+  iva:21.0,
+  subtotal() {
+    return this.precio
+  },
+}
+
+//Constructores
+function web() {
+this.url="http://localhost";
+this.name = "Localhost"
+
+this.muestraInfomracion = function() {
+  return "url :" +this.url + "\n"+ "web: " +this.name;
+}
+
+} 
+unaWeb = new web();
