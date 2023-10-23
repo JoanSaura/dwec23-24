@@ -1,8 +1,5 @@
 /*
     ARRAYS
-
-
-
 */
 
 // Defniir arrays
@@ -225,3 +222,123 @@ this.muestraInfomracion = function() {
 
 } 
 unaWeb = new web();
+
+const ciudades = [
+  {
+    "municio": "Zaragoza",
+    "provincia" : "Zaragoza"
+  }, {
+    "municio": "Madrid",
+    "provincia" : "Madrid"
+  }, {
+    "municio": "Barcelona",
+    "provincia" : "Barcelona"
+  },
+
+]
+ciudades.sort((a,b)=> {
+  return a.municio.localeCompare(b.municio)
+});
+
+const miArray = ["A","B","C"];
+miArray.push("D");
+
+// Destructuracion
+const numeros = [1, 2, 3];
+const [uno, dos ,tres] = numeros;
+
+const personas = {
+  nombre : "Andreu",
+  edad : 33
+}
+
+const {ne, e} = personas
+console.log(object);
+
+const nombre = "josep";
+const edad = 33;
+
+const persona = {
+  nombre,
+  edad
+}
+
+//Template Strings - Plantillas de cadenas
+//operdaor de interpoblacion ${}
+
+const nom = "Bob";
+const edadNom = 32;
+
+const mensaje = `Hola, mi nombre ${nom} y tengo ${edadNom} tacos`
+console.log(mensaje);
+
+//spread
+const nums = [1,2,3];
+const nuevosNumeros = [...nums,4,5];
+
+//Parametros por defecto
+function saludar(nombre = "Invitado") {
+  console.log(`Hola, ${nombre}`);
+}
+
+//Parametros rest (rest parameters)
+function suma(...numeros) {
+  let result = 0;
+  for(let numero of numeros) {
+    result += numero;
+  }
+  return result;
+}
+
+//Funciones flechas () =>
+
+const  suma2 = (a , b) => a+b;
+
+//forEach() ejecuta una funcion una vez por cada elemnto en nuestro array   
+const numerosFor = [1,2,3,4,5];
+numeros.forEach((numerosFor ) => {
+  console.log(numerosFor);
+})
+
+const multiplicar = (n) => {
+  return n*2;
+}
+
+//map() crea un nuevo array con los resultados de aplica   una funcion a cada elemento del array
+const dobleNum = numeros.map((numero) => {
+  return multiplica(numero)
+})
+
+//filter() Crea un nuev array con todos los elementos que cumplan una condicion determinada
+const numerosPares = numeros.filter((numeros) => {
+  return numero % 2 === 0;
+});  
+
+const numerosMayoresDos = numeros.filter((numero) => {  
+  return numero > 2; 
+});  
+
+//reduce() aplica una funcion a un acumulador y a cada elemento del array (de izquierda ha derecha) para reducirlo a un unico valor
+const sum = numeros.reduce((acumulador,numero) => {
+    return acumula + Number;
+},0);
+
+//find() devuelve el primer elemento del array cumpla una determinada condicion
+const numeroEncontrado = numeros.find(() => {
+  return numero < 3;
+});
+
+//findIndex() Devuelve el indice del primer elemnto del array que cumple con una funcion de o -1 si no encuentra nada
+const inidceEncontrado = numeros.findIndex((numero) => {
+    return numero < 3;
+})  
+
+//some() Comprueba si al menos un elemento del array cumple una condicion determinada
+const tieneNumeroPar = numeros.some((numero) => {
+  return numero % 2 === 0;
+});
+
+//every() comprueba si todos los elementos cumplen una condicion determianda 
+const todoNumerosPares = numeros.every((numero) => {
+  return numero % 2 === 0 ;
+});
