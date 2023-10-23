@@ -342,3 +342,69 @@ const tieneNumeroPar = numeros.some((numero) => {
 const todoNumerosPares = numeros.every((numero) => {
   return numero % 2 === 0 ;
 });
+//Classes - class (Para crear clases)
+
+class Persona {
+  constructor(nombre) {
+    this.nombre = nombre;
+  }
+  Saludar() {
+    console.log(`Hola soy ${this.nombre}`);
+  }
+}
+
+const Joan = new Persona("Joan")
+console.log(Joan.Saludar());
+
+//Herencia
+class Empleado extends Persona {
+  constructor(nombre,salario) {
+    super(nombre);
+    this.salario = salario;
+  }
+  trabajar() {
+    console.log(`${this.nombre} esta trabajando`);
+  }
+}
+
+const Maria = new Empleado("Mario",3)
+
+Maria.trabajar();
+
+//Simbolos
+//los simbolos son una nueva clase de de datos introducida por ES6, son valores unicos e inmutables 
+//se pueden utilizar como indentificados de propiedades de objetos  
+
+const id = Symbol("id");
+const PersonaS = {
+
+}
+
+//Iteradores objetos que implementan el protocolo de interacion en JavaScript. Permiten recorrer y acceder a los elementos de una coleccion uno a uno
+
+const numerosIt = [1,2,3]
+const iteradornum = numeros[Symbol.interator]();
+
+console.log(iteradornum.next()); //Muestra numero por numero
+
+//Set permite almacenar valores unicos de calquier tipo, no permite duplicados y ofrece metodos para agregar, eliminar y verificar la existencia de elementos
+
+const set = new Set()
+set.add(1);
+set.add(2);
+set.add(3);
+
+console.log(setNumeros.has(2)); //True
+console.log(setNumeros.has(4)); //False
+
+const IterarNums = setNumeros[Symbol.iterator]();
+console.log(IterarNums.next());
+
+//Map permite almacenar PARES clave-valor donde cada clave es unicaS
+//Permite opreaciones de busqueda, insercion y eliminacion
+
+const mapNombres = new Map();
+mapNombres.set("nombre","Ana");
+mapNombres.set("edad",12);
+
+console.log(mapNombres.has("edad"));
