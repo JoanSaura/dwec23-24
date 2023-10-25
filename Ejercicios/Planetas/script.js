@@ -20,10 +20,10 @@ function Planeta(nombre, distanciaAlSol, tamañoRelativo, fechaDescubrimiento) {
 }
 
 // Crear objetos Planeta a partir de los arrays
-const planetas = [];
+const planetas = []; //Declaramos un array vacia para poder ir colocando los planetas
 for (let i = 0; i < nombres.length; i++) {
     const planeta = new Planeta(nombres[i], distanciasAlSol[i], tamanosRelativos[i], fechasDescubrimiento[i]);
-    planetas.push(planeta);
+    planetas.push(planeta); //Agregamos los planetas
 }
 
 // Función para mostrar la información de un planeta
