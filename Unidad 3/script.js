@@ -89,3 +89,42 @@ parrafo.innerHTML = fehca.getDate();
 //getMinutes() minutos
 //getSeconds() segundos
 //getMiliseconds() milisegundos
+
+//COOKIES
+//Monitorizar actividad de los usuarios
+//Mantener opciones de visualizacion o de aspecto para el usuario
+//Almacenar variables en el lado cliente 
+//Indentificacion o autenticacion.
+
+
+//CREA UNA COOKIE
+
+//document.cookie = "usuario=Oreo";
+function crearCookie(usuarioCookie) {
+    document.cookie ="usuario=" +encodeURIComponent(usuarioCookie);
+    usuarioCookie +=";expires=Tue, 7 Nov 2023 12:15:00 GMT"
+}
+
+function leerCookie() {
+   console.log(document.cookie);
+}
+
+
+//LOCAL STORAGE
+//setItem(clave,valor)
+//getItem(clave)
+
+let unCliente = {
+    Nombre : "Joan",
+    Apellido :  "Saura"
+}
+function guardarValores() {
+    let usuarioWeb= ["E","A","I"]
+    localStorage.setItem("usuario","Joan");
+}
+localStorage.setItem("usuario",JSON.stringify(unCliente));
+
+function leerValores() {
+    console.log(localStorage.getItem(usuario));
+    console.log(usuario == null ? "la clave no se ha enctrado": usuario);
+}
