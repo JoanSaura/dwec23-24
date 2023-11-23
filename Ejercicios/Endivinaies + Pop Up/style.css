@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#start {
+    display: block;
+    margin: 20px auto;
+    background: crimson ;
+    color: white;
+    padding: 6px 10px;
+}
+
+#questioProposada{
+    font-size: 24px;
+    margin: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#missatge {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#popup {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;   
+    margin: 10% auto;
+    padding: 2px;
+    padding-bottom: 2px;
+    border: 5px solid black;
+    background: rgb(192, 172, 172);
+    position: relative;
+    display: none;
+}
+
+#tancar {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    cursor: pointer;
+}
