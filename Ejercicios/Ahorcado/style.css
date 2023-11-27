@@ -48,10 +48,9 @@ body {
     max-width: 510px;
     justify-content: center;
   }
-  #dibujo {
-    width: 500px;
-    height: 250px
-    ;
+  #dibujo img{
+    max-width: 500px;
+    max-height: 250px;
     background-color: aliceblue;
   }
   .letra {
